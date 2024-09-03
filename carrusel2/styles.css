@@ -9,7 +9,7 @@ body {
     overflow: hidden;
 }
 
-.container {
+.container-slide {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,7 +20,7 @@ body {
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
-.container .slide .item {
+.container-slide .slide .item {
     width: 200px;
     height: 300px;
     position: absolute;
@@ -60,7 +60,7 @@ body {
     opacity: 0;
 }
 
-.item .content {
+.item .content-slide {
     position: absolute;
     top: 50%;
     left: 100px;
@@ -72,11 +72,11 @@ body {
     display: none;
 }
 
-.slide .item:nth-child(2) .content {
+.slide .item:nth-child(2) .content-slide {
     display: block;
 }
 
-.content .name {
+.content-slide .name {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -84,14 +84,14 @@ body {
     animation: animate 1s ease-in-out 1 forwards;
 }
 
-.content .des {
+.content-slide .des {
     margin-top: 10px;
     margin-bottom: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.content button {
+.content-slide button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
